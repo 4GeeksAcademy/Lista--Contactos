@@ -1,0 +1,244 @@
+
+/*variables*/
+:root {
+--color-primario: #28a745;
+--color-danger: #dc3545;
+--color-light: #ffffff;
+--color-border: #dee2e6;
+--color-bg: #f8f9fa;
+border-radius: var(--border-radius);
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos globales*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: #333;
+    line-height: 1.5;
+}
+
+/*layout*/
+.layout {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    border-top: 1px solid #eee;
+    width: 100%;    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.boton-añadir {
+    background-color:#1a8806;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-size: 28px;
+}
+
+.contenedor-contactos{
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0 10px;
+}
+
+.tarjeta-contacto{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: -1px;
+    width: 100%;
+}
+
+.foto-contacto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+
+.informacion-contacto {
+   flex-grow: 1;
+}
+
+.informacion-contacto h3 {
+margin-bottom: 8px;
+font-size: 1.3rem;
+color: #333;
+}
+
+.informacion-contacto p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.informacion-contacto i {
+    width: 25px;
+    color: #adb5bd;
+}
+
+
+.accion-contacto{
+    display: flex;
+    gap: 25px;
+    align-self: flex-start;
+}
+
+.boton-editar,.boton-borrar {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.boton-borrar{
+    color: var(--color-danger);
+}
+
+.boton-editar{
+   color: #333;
+}
+
+.agenda-vacia{
+    text-align: center;
+    padding: 50px;
+    color: #6c757d;
+    background-color: #fff;
+    border: 1px dashed #dee2e6;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+}
+
+
+.contenedor-pagina{
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.formulario{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.editor-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grupos-fom{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.grupos-fom label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grupos-fom input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+.botones-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.guardar{
+    background-color: #3b6edc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius:var(--border-radius);
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.volver{
+    display: block;
+    text-align: left;
+    color: #3b6edc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+
+/*modal*/
+
+.aviso-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-modal{
+    background-color: white;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    width: 300px;
+    text-align: center;
+}
+
+
+.botones-avisos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-cancelar{
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
